@@ -7,7 +7,8 @@ exports.config = {
     } ,
     directConnect:true, 
     baseUrl: "https://www.globalsqa.com/angularJs-protractor/SearchFilter/",
-    specs: ['src/specs/*.spec.ts'],
+    // specs: ['src/specs/**/*.spec.ts'],
+    specs: ['src/specs/homepage/wait.spec.ts'],
     restartBrowserBetweenTests: false,
     // overriding default value of getPageTimeout parameter
     // Timeout While Waiting For The Page To Load

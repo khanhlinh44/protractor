@@ -4,7 +4,7 @@
   "description": "End to End Tests for My Application",
   "main": "protractor.conf.js",
   "scripts": {
-    "pretest": "webdriver-manager update",
+    "pretest": "webdriver-manager update --gecko false --standalone false",
     "test": "protractor protractor.conf.js"
   },
   "dependencies": {
