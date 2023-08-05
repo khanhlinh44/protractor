@@ -2,17 +2,18 @@ import { browser, element, by } from "protractor";
 import BaseTestPage from "../basetest.page";
 
 export class HomePage extends BaseTestPage {
-  async verifyListOfAccount(arg0: string) {
-    throw new Error("Method not implemented.");
-  }
-  async selectSearchByAccount(arg0: string) {
-    throw new Error("Method not implemented.");
-  }
+
   nameInput = element(
     by.xpath(
       "(//label[normalize-space()='Search by Payee']/following::input)[1]"
     )
   );
+
+  async verifyListOfAccount(arg0: string) {
+    throw new Error("Method not implemented.");
+  }
+  async selectSearchByAccount(arg0: string) {
+  }
 
   async openHomePage() {
     await browser.get('');

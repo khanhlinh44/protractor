@@ -10,11 +10,15 @@
   "dependencies": {
     "@types/jasmine": "^4.3.5",
     "@types/node": "^20.4.5",
+    "fs-extra": "^11.1.1",
     "jasmine": "^5.1.0",
-    "jasmine-spec-reporter": "^7.0.0",
     "protractor": "^7.0.0",
     "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "jasmine-spec-reporter": "^7.0.0"
   }
 }

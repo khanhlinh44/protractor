@@ -6,7 +6,7 @@ describe('Verify search function', () => {
     const homepage = new HomePage();
     await homepage.openHomePage();
     await homepage.enterSearchByPayee("Salary");
-    await homepage.verifyListOfPayee("Salary1");
+    await homepage.verifyListOfPayee("Salary");
   });
 
   xit('Search by account', async () => {
