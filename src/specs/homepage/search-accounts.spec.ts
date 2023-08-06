@@ -9,7 +9,7 @@ describe('Verify search function', () => {
     await homepage.verifyListOfPayee("Salary");
   });
 
-  xit('Search by account', async () => {
+  it('Search by account', async () => {
     const homepage = new HomePage();
     await homepage.openHomePage();
     await homepage.selectSearchByAccount("Cash");

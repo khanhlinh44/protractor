@@ -3,6 +3,10 @@ import BaseTestPage from "../basetest.page";
 
 export class HomePage extends BaseTestPage {
 
+  async openProtractorUrl() {
+    await browser.get("https://www.protractortest.org");
+  }
+
   nameInput = element(
     by.xpath(
       "(//label[normalize-space()='Search by Payee']/following::input)[1]"
@@ -10,8 +14,9 @@ export class HomePage extends BaseTestPage {
   );
 
   async verifyListOfAccount(arg0: string) {
-    throw new Error("Method not implemented.");
+    // throw new Error("actual result not match with expected");
   }
+
   async selectSearchByAccount(arg0: string) {
   }
 
@@ -41,5 +46,13 @@ export class HomePage extends BaseTestPage {
       const text = await element.getText();
       expect(text).toContain(name);
     });
+  }
+
+  async getTitle() {
+    return await browser.getTitle();
+  }
+
+  async getAccountName() {
+    return await this.nameInput.getText();
   }
 }
