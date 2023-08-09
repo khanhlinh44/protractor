@@ -1,7 +1,7 @@
 import { browser, element, by } from "protractor";
 import BaseTestPage from "../basetest.page";
 
-export class HomePage extends BaseTestPage {
+export class AccountPage extends BaseTestPage {
 
   async openProtractorUrl() {
     await browser.get("https://www.protractortest.org");

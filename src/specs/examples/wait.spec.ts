@@ -1,8 +1,8 @@
 import { browser, by, element, protractor } from "protractor";
-import { HomePage } from "../../pages/homepage/homepage.page";
+import { AccountPage } from "../../pages/accounts/accounts.page";
 
 describe('Waiting in Protractor', () => {
-  xit('Demo implicit wait', async () => {
+  it('Demo implicit wait', async () => {
     await browser.waitForAngularEnabled(false);
     await browser.manage().timeouts().implicitlyWait(6000);
     await browser.get("http://the-internet.herokuapp.com/dynamic_loading/2");

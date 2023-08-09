@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="2" time="2.862">
- <testsuite name="Example in Protractor" timestamp="2023-08-06T22:41:31" hostname="localhost" time="2.862" errors="0" tests="2" skipped="1" disabled="0" failures="0">
-  <testcase classname="Example in Protractor" name="How to make API call" time="0.001">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
-  <testcase classname="Example in Protractor" name="Testing timeout in Jasmine" time="2.86" />
+<testsuites disabled="0" errors="0" failures="0" tests="4" time="17.531">
+ <testsuite name="Example in Protractor" timestamp="2023-08-09T21:34:23" hostname="localhost" time="3.386" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Example in Protractor" name="How to make API call" time="0.289" />
+  <testcase classname="Example in Protractor" name="Testing timeout in Jasmine" time="3.096" />
+ </testsuite>
+ <testsuite name="Waiting in Protractor" timestamp="2023-08-09T21:34:26" hostname="localhost" time="14.145" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Waiting in Protractor" name="Demo implicit wait" time="8.696" />
+  <testcase classname="Waiting in Protractor" name="Demo explicit wait" time="5.449" />
  </testsuite>
 </testsuites>

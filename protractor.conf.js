@@ -2,7 +2,7 @@ exports.config = {
     directConnect: true,
     baseUrl: "https://www.globalsqa.com/angularJs-protractor/SearchFilter/",
     // specs: ['src/specs/**/*.spec.ts'],
-    specs: ['src/specs/homepage/examples.spec.ts'],
+    specs: ['src/specs/accounts/search-accounts.spec.ts'],
     restartBrowserBetweenTests: false,
     // Timeout While Waiting For The Page To Load
     getPageTimeout: 10000,
@@ -11,11 +11,24 @@ exports.config = {
     jasmineNodeOpts: {
         showColor: true,
         print: function () { },
-        defaultTimeoutInterval: 4000,
+        defaultTimeoutInterval: 30000,
     },
     capabilities: {
         'browserName': 'chrome'
     },
+
+    // Run specific test suite
+    suites: {
+        smoke: [
+            "src/specs/accounts/search-accounts.spec.ts"
+        ],
+        regression: [
+            "src/specs/examples/examples.spec.ts",
+            "src/specs/examples/wait.spec.ts",
+        ],
+    },
+
+    // Hook
     onPrepare() {
         require('ts-node').register({
             project: require('path').join(__dirname, './tsconfig.json')
